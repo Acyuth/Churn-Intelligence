@@ -1,0 +1,14 @@
+# data files
+data/raw/
+data/synthetic/
+data/*.db
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+
+# mac
+.DS_Store
