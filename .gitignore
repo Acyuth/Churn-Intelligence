@@ -11,4 +11,4 @@ venv/
 .env
 
 # mac
-.DS_Store
+.DS_Storedata/processed/
