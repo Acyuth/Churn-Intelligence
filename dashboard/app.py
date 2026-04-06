@@ -3,14 +3,14 @@ import pandas as pd
 import pickle
 from pathlib import Path
 
-# --- PAGE SETUP ---
+# PAGE SETUP 
 st.set_page_config(page_title="KKBOX Churn AI", page_icon="🎧", layout="centered")
 
 st.title("🎧 KKBOX Customer Retention Engine")
 st.markdown("Modify user behavior parameters to simulate churn risk and determine intervention strategy.")
 st.divider()
 
-# --- LOAD MODEL ---
+# LOAD MODEL 
 # @st.cache_resource ensures the heavy model only loads once, keeping the app fast
 @st.cache_resource
 def load_model():
@@ -30,7 +30,7 @@ except FileNotFoundError:
     st.error("Model files not found. Make sure you are running the app from the root 'churn-intelligence' folder.")
     st.stop()
 
-# --- USER INPUTS (Based on top SHAP features) ---
+# USER INPUTS (Based on top SHAP features) 
 st.subheader("User Behavior & Profile")
 
 col1, col2 = st.columns(2)
@@ -66,7 +66,7 @@ for col in feature_names:
 
 input_df = pd.DataFrame([model_inputs])
 
-# --- PREDICTION ENGINE ---
+# PREDICTION ENGINE 
 st.divider()
 
 if st.button("Calculate Churn Risk", type="primary", use_container_width=True):
