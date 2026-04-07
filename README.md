@@ -3,6 +3,7 @@
 An end-to-end Machine Learning pipeline and interactive dashboard designed to predict customer churn and simulate the financial impact of retention interventions. Built using the WSDM KKBOX Music Recommendation dataset.
 
 [![Live App](https://acyuth-retention-engine.streamlit.app/)]
+![Dashboard Preview](assets/dashboard_screenshot.png)
 
 
 ## 📊 Project Overview
